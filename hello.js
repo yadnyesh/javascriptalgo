@@ -15,4 +15,9 @@ function addUpToNoLoop(n) {
 let t1 = performance.now()
 console.log(addUpToNoLoop(100));
 let t2 = performance.now();
-console.log(`Time Elapsed: ${(t2 - t1)/1000} seconds`)
+console.log(`Time Elapsed: ${(t2 - t1)/1000} seconds without for loop`)
+
+t1 = performance.now()
+console.log(addUpTo(100));
+t2 = performance.now();
+console.log(`Time Elapsed: ${(t2 - t1)/1000} seconds WITH for loop`)
